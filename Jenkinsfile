@@ -5,7 +5,6 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile stage...'
-                echo 'Compile stage...'
             }
         }
     
