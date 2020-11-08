@@ -7,6 +7,12 @@ pipeline {
                 echo 'Compile stage...'
             }
         }
+        stage('Package') {
+            steps {
+                echo 'Packaging stage...'
+                echo 'Packaging stage...'
+            }
+        }
     
         stage('Testing') {
             steps {
@@ -18,6 +24,12 @@ pipeline {
             steps {
                 echo 'Deploy stage...'
                 echo 'Deploy stage...'
+            }
+        }
+        stage('SonarQubeReport')
+        {
+            withSonarQubeEnv('MySonar') {
+                sh "mvn sonar:sonar"
             }
         }
     }
