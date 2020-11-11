@@ -5,6 +5,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile stage...'
+                echo 'Compile stage...'
             }
         }
         stage('Package') {
@@ -16,6 +17,7 @@ pipeline {
     
         stage('Testing') {
             steps {
+                echo 'Testing stage...'
                 echo 'Testing stage...'
             }
         }
