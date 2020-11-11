@@ -25,7 +25,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy stage...'
-                echo 'Deploy stage...'
             }
         }
         stage('SonarQubeReport')
